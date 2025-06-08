@@ -1,0 +1,4 @@
+[10-Jun-2024 21:00:52 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/bpvr5634/public_html/sibkh.bpvppadangkemnaker.id/kegiatan/cetak.php on line 107
+[10-Jun-2024 21:01:21 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/bpvr5634/public_html/sibkh.bpvppadangkemnaker.id/kegiatan/cetak.php on line 107
+[10-Jun-2024 21:01:32 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/bpvr5634/public_html/sibkh.bpvppadangkemnaker.id/kegiatan/cetak.php on line 107
+[10-Jun-2024 21:01:45 Asia/Jakarta] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, bool given in /home/bpvr5634/public_html/sibkh.bpvppadangkemnaker.id/kegiatan/cetak.php on line 107
