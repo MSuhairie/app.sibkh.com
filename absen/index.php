@@ -120,7 +120,7 @@
             //jika pencarian data tidak ditemukan
             if(mysqli_num_rows($query) == 0){
           ?>
-          <td colspan="6" align="center">
+          <td colspan="7" align="center">
             <font color=red><blink>Pencarian data tidak ditemukan!</blink></font>
           </td>
           <?php } ?>
