@@ -178,11 +178,11 @@
               <colgroup>
                 <col style="width: 30px">
                 <col style="width: 50px">
+                <col style="width: 74px">
                 <col style="width: 64px">
+                <col style="width: 52px">
                 <col style="width: 64px">
-                <col style="width: 112px">
-                <col style="width: 64px">
-                <col style="width: 88px">
+                <col style="width: 100px">
               </colgroup>
               <thead>
                 <tr>
