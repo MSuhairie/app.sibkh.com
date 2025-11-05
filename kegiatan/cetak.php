@@ -178,11 +178,13 @@
               <colgroup>
                 <col style="width: 5px">
                 <col style="width: 100px">
+                <col style="width: 10px">
               </colgroup>
               <thead>
                 <tr>
                   <th class="tg-amwm">No</th>
                   <th class="tg-amwm">Kegiatan</th>
+                  <th class="tg-amwm">TTD</th>
                 </tr>
               </thead>
               <tbody>
@@ -210,6 +212,7 @@
                 <tr>
                   <td class="tg-0lax" style="text-align: center;"><?= $no++ ?></td>
                   <td class="tg-0lax" style="text-transform: capitalize;"><?= $data['kegiatan'] ?></td>
+                  <td class="tg-0lax" style="text-transform: capitalize;"></td>
                 </tr>
                 <?php } ?>
               </tbody>
