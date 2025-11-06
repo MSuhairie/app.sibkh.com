@@ -22,6 +22,15 @@
           <label>Kegiatan</label>
           <textarea name="kegiatan" class="form-control" id="" cols="30" rows="10" required><?= $data['kegiatan'] ?></textarea>
         </div>
+        <div class="mb-3">
+          <label class="form-label">Gambar</label>
+          <input type="hidden" class="form-control" id="foto_lama" name="foto_lama" value="<?php echo $data['gambar'] ?>">
+          <input type="file" class="form-control" id="gambar" name="gambar">
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Gambar Lama</label><br>
+          <img src="img/<?php echo $data['gambar'] ?>" width="150px" height="120px" />
+        </div>
         <div class="d-flex justify-content-star">
         <a href="?page=kegiatan/index" class="btn btn-danger mr-2">Kembali</a>
         <button type="submit" class="btn btn-primary">Simpan</button>

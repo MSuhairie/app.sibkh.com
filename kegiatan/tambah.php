@@ -15,6 +15,10 @@
           <label>Kegiatan</label>
           <textarea name="kegiatan" class="form-control" id="" cols="30" rows="10" required></textarea>
         </div>
+        <div class="form-group">
+          <label class="form-label">Gambar</label>
+          <input type="file" class="form-control" name="gambar">
+        </div>
         <div class="d-flex justify-content-star">
           <button type="submit" class="btn btn-primary mr-2">Simpan</button>
           <a href="?page=kegiatan/index" class="btn btn-info"><i class="fa fa-eye"></i> Lihat Data</a>

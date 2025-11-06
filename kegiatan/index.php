@@ -76,6 +76,7 @@
               <th scope="col">No</th>
               <th scope="col">Tanggal</th>
               <th scope="col">Kegiatan</th>
+              <th scope="col">Gambar</th>
               <th scope="col">Aksi</th>
             </tr>
           </thead>
@@ -88,6 +89,7 @@
             <td><?= $no++ ?></td>
             <td><?= date('d-m-Y', strtotime($data['tgl'])) ?></td>
             <td><?= $data['kegiatan'] ?></td>
+            <td><img src="img/<?= $data['gambar'] ?>" width="100px"></td>
             <td>
               <a href="?page=kegiatan/ubah&id_kegiatan=<?= $data['id_kegiatan'] ?>" class="btn btn-warning"><i class="fa fa-edit"></i></a>
               <a href="?page=kegiatan/hapus&id_kegiatan=<?= $data['id_kegiatan'] ?>" class="btn btn-danger" onclick="confirm('Anda Yakin Hapus ?')"><i class="fa fa-trash"></i></a>
@@ -124,6 +126,7 @@
               <th scope="col">No</th>
               <th scope="col">Tanggal</th>
               <th scope="col">Kegiatan</th>
+              <th scope="col">Gambar</th>
               <th scope="col">Aksi</th>
             </tr>
           </thead>
@@ -137,6 +140,7 @@
             <td><?= $no++ ?></td>
             <td><?= date('d-m-Y', strtotime($data['tgl'])) ?></td>
             <td><?= $data['kegiatan'] ?></td>
+            <td><img src="img/<?= $data['gambar'] ?>" width="100px"></td>
             <td>
               <a href="?page=kegiatan/ubah&id_kegiatan=<?= $data['id_kegiatan'] ?>" class="btn btn-warning"><i class="fa fa-edit"></i></a>
               <a href="?page=kegiatan/hapus&id_kegiatan=<?= $data['id_kegiatan'] ?>" class="btn btn-danger" onclick="confirm('Anda Yakin Hapus ?')"><i class="fa fa-trash"></i></a>
