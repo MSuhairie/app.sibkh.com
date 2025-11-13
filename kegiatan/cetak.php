@@ -251,54 +251,53 @@
     <!-- GARIS KOP SURAT -->
     <hr style="border: 1px solid black;">
       <div class="row" style="margin-top: 10px;">
-  <table class="tg" style="table-layout: fixed; width: 100%">
-    <colgroup>
-      <col style="width: 50%">
-      <col style="width: 50%">
-    </colgroup>
-    <tbody>
-      <?php 
-        $no = 1;
-        $tanggal_awal = $_GET['tanggal_awal'];
-        $tanggal_akhir = $_GET['tanggal_akhir'];
+        <table class="tg" style="table-layout: fixed; width: 100%">
+          <colgroup>
+            <col style="width: 50%">
+            <col style="width: 50%">
+          </colgroup>
+          <tbody>
+            <?php 
+              $no = 1;
+              $tanggal_awal = $_GET['tanggal_awal'];
+              $tanggal_akhir = $_GET['tanggal_akhir'];
 
-        $query = mysqli_query($koneksi, "
-          SELECT k.*
-          FROM tb_kegiatan k
-          INNER JOIN (
-              SELECT gambar, kegiatan, MIN(tgl) AS tgl
-              FROM tb_kegiatan
-              WHERE id_user = '$_SESSION[id_user]'
-              AND tgl BETWEEN '$tanggal_awal' AND '$tanggal_akhir'
-              AND statusenabled = 't'
-              AND gambar != ''
-              GROUP BY kegiatan
-              ORDER BY MIN(tgl) ASC
-              LIMIT 33
-          ) sub ON k.kegiatan = sub.kegiatan AND k.tgl = sub.tgl
-        ");
+              $query = mysqli_query($koneksi, "
+                SELECT k.*
+                FROM tb_kegiatan k
+                INNER JOIN (
+                    SELECT size, gambar, kegiatan, MIN(tgl) AS tgl
+                    FROM tb_kegiatan
+                    WHERE id_user = '$_SESSION[id_user]'
+                    AND tgl BETWEEN '$tanggal_awal' AND '$tanggal_akhir'
+                    AND statusenabled = 't'
+                    AND gambar != ''
+                    GROUP BY kegiatan
+                    ORDER BY MIN(tgl) ASC
+                    LIMIT 33
+                ) sub ON k.kegiatan = sub.kegiatan AND k.tgl = sub.tgl
+              ");
 
-        $count = 0;
-        echo "<tr>"; // mulai baris pertama
-        while($data = mysqli_fetch_array($query)) {
-      ?>
-        <td class="tg-0lax" style="text-transform: capitalize; text-align:center; padding:10px;">
-          <img src="../img/<?= $data['gambar'] ?>" width="100%"><br>
-          <?= $data['kegiatan'] ?>
-        </td>
-      <?php
-          $count++;
-          if ($count % 2 == 0) {
-              echo "</tr><tr>"; // tutup dan buka baris baru setiap 2 kolom
-          }
-        }
-        // jika jumlah data ganjil, tutup baris terakhir
-        if ($count % 2 != 0) echo "<td></td></tr>";
-      ?>
-    </tbody>
-  </table>
-</div>
-
+              $count = 0;
+              echo "<tr>"; // mulai baris pertama
+              while($data = mysqli_fetch_array($query)) {
+            ?>
+              <td class="tg-0lax" style="text-transform: capitalize; text-align:center; padding:10px;">
+                <img src="../img/<?= $data['gambar'] ?>" width="<?= $data['size'] != 0 ? $data['size'].'%' : '100%' ?>"><br>
+                <?= $data['kegiatan'] ?>
+              </td>
+            <?php
+                $count++;
+                if ($count % 2 == 0) {
+                    echo "</tr><tr>"; // tutup dan buka baris baru setiap 2 kolom
+                }
+              }
+              // jika jumlah data ganjil, tutup baris terakhir
+              if ($count % 2 != 0) echo "<td></td></tr>";
+            ?>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
 </body>

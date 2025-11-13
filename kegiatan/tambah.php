@@ -16,6 +16,10 @@
           <textarea name="kegiatan" class="form-control" id="" cols="30" rows="10" required></textarea>
         </div>
         <div class="form-group">
+          <label>Ukuran Gambar Boleh diisi atau tidak</label>
+          <input type="number" class="form-control" name="size" id="size" placeholder="1-100">
+        </div>
+        <div class="form-group">
           <label class="form-label">Gambar</label>
           <input type="file" class="form-control" name="gambar">
         </div>

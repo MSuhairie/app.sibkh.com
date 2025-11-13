@@ -22,6 +22,10 @@
           <label>Kegiatan</label>
           <textarea name="kegiatan" class="form-control" id="" cols="30" rows="10" required><?= $data['kegiatan'] ?></textarea>
         </div>
+        <div class="form-group">
+          <label>Ukuran Gambar Boleh diisi atau tidak</label>
+          <input type="number" class="form-control" name="size" value="<?= $data['size'] ?>" placeholder="1-100">
+        </div>
         <div class="mb-3">
           <label class="form-label">Gambar</label>
           <input type="hidden" class="form-control" id="foto_lama" name="foto_lama" value="<?php echo $data['gambar'] ?>">
