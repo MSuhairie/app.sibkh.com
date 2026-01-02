@@ -6,11 +6,12 @@ $nama_lengkap = $_POST['nama_lengkap'];
 $username = $_POST['username'];
 $password = $_POST['password'];
 $jabatan = $_POST['jabatan'];
+$perusahaan = $_POST['perusahaan'];
 
 if($password <> "") {
-	$query = mysqli_query($koneksi, "UPDATE tb_user SET nip='$nip', nama_lengkap='$nama_lengkap', username='$username', password='$password', jabatan='$jabatan' WHERE id_user='$id_user'");
+	$query = mysqli_query($koneksi, "UPDATE tb_user SET nip='$nip', nama_lengkap='$nama_lengkap', username='$username', password='$password', jabatan='$jabatan', perusahaan='$perusahaan' WHERE id_user='$id_user'");
 }else {
-	$query = mysqli_query($koneksi, "UPDATE tb_user SET nip='$nip', nama_lengkap='$nama_lengkap', username='$username', jabatan='$jabatan' WHERE id_user='$id_user'");
+	$query = mysqli_query($koneksi, "UPDATE tb_user SET nip='$nip', nama_lengkap='$nama_lengkap', username='$username', jabatan='$jabatan', perusahaan='$perusahaan' WHERE id_user='$id_user'");
 }
 
 if($query) {

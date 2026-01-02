@@ -5,9 +5,10 @@ $nama_lengkap = $_POST['nama_lengkap'];
 $username = $_POST['username'];
 $password = $_POST['password'];
 $jabatan = $_POST['jabatan'];
+$perusahaan = $_POST['perusahaan'];
 
-$query = mysqli_query($koneksi, "INSERT INTO tb_user (nip, nama_lengkap, username, password, jabatan) 
-	VALUES ('$nip', '$nama_lengkap', '$username', '$password', '$jabatan')");
+$query = mysqli_query($koneksi, "INSERT INTO tb_user (nip, nama_lengkap, username, password, jabatan, perusahaan) 
+	VALUES ('$nip', '$nama_lengkap', '$username', '$password', '$jabatan', '$perusahaan')");
 
 if($query) {
 	echo "<script>alert('Data Berhasil Ditambahkan');window.location.href='?page=user/index';</script>";

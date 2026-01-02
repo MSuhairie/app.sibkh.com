@@ -27,6 +27,10 @@
           <input type="text" class="form-control" placeholder="Massukan Jabatan" name="jabatan" value="<?= $data['jabatan']?>">
         </div>
         <div class="form-group">
+          <label>Perusahaan</label>
+          <input type="text" class="form-control" placeholder="Massukan Perusahaan" name="perusahaan" value="<?= $data['perusahaan']?>">
+        </div>
+        <div class="form-group">
           <label>Username</label>
           <input type="text" class="form-control" placeholder="Massukan Username" name="username" value="<?= $data['username']?>">
         </div>

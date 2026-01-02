@@ -167,7 +167,7 @@
             <div class="grid_2">NAMA</div>
             <div class="grid_10" style="margin-left: -30px; text-transform: uppercase;">: <?= $_SESSION['nama_lengkap'] ?></div>
             <div class="grid_2">PERUSAHAAN</div>
-            <div class="grid_10" style="margin-left: -30px; text-transform: uppercase;">: PT. Jasamedika Saranatama</div>
+            <div class="grid_10" style="margin-left: -30px; text-transform: uppercase;">: <?= $_SESSION['perusahaan'] ?></div>
             <div class="grid_2">JABATAN</div>
             <div class="grid_10" style="margin-left: -30px; text-transform: uppercase;">: <?= $_SESSION['jabatan'] ?></div>
             <div class="grid_2">PERIODE</div>

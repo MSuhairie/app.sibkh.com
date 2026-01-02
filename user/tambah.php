@@ -27,6 +27,10 @@
           <label>Jabatan</label>
           <input type="text" class="form-control" placeholder="Massukan Jabatan" name="jabatan">
         </div>
+        <div class="form-group">
+          <label>Perusahaan</label>
+          <input type="text" class="form-control" placeholder="Massukan Perusahaan" name="perusahaan">
+        </div>
         <div class="d-flex justify-content-star">
         <a href="?page=user/index" class="btn btn-danger mr-2">Kembali</a>
         <button type="submit" class="btn btn-primary">Simpan</button>

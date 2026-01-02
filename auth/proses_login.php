@@ -17,6 +17,7 @@ if (isset($_POST['login'])) {
 			$_SESSION['nama_lengkap'] = $data['nama_lengkap'];
 			$_SESSION['jabatan'] 	  = $data['jabatan'];
 			$_SESSION['nip'] 	  	  = $data['nip'];
+			$_SESSION['perusahaan']   = $data['perusahaan'];
 
 			echo "<script>
 			alert('Login Berhasil ".$_SESSION['nama_lengkap']."')

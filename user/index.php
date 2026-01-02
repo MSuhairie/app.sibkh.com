@@ -16,6 +16,7 @@
               <th scope="col">NIP</th>
               <th scope="col">Nama Lengkap</th>
               <th scope="col">Jabatan</th>
+              <th scope="col">Perusahaan</th>
               <th scope="col">Aksi</th>
             </tr>
           </thead>
@@ -31,6 +32,7 @@
               <td><?= $data['nip'] ?></td>
               <td><?= $data['nama_lengkap'] ?></td>
               <td><?= $data['jabatan'] ?></td>
+              <td><?= $data['perusahaan'] ?></td>
               <td>
                 <a href="?page=user/ubah&id_user=<?= $data['id_user'] ?>" class="btn btn-warning">Edit</a>
                 <a href="?page=user/hapus&id_user=<?= $data['id_user'] ?>" class="btn btn-danger" onclick="confirm('Anda Yakin Hapus ?')">Hapus</a>
