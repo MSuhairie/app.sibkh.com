@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 02 Jan 2026 pada 05.34
+-- Waktu pembuatan: 02 Jan 2026 pada 10.05
 -- Versi server: 10.4.19-MariaDB
 -- Versi PHP: 7.4.20
 
@@ -77832,6 +77832,7 @@ CREATE TABLE `tb_user` (
   `nip` varchar(255) NOT NULL,
   `nama_lengkap` varchar(255) NOT NULL,
   `jabatan` varchar(255) NOT NULL,
+  `perusahaan` varchar(255) NOT NULL,
   `statusenabled` enum('t','f') NOT NULL DEFAULT 't'
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
@@ -77839,9 +77840,9 @@ CREATE TABLE `tb_user` (
 -- Dumping data untuk tabel `tb_user`
 --
 
-INSERT INTO `tb_user` (`id_user`, `username`, `password`, `nip`, `nama_lengkap`, `jabatan`, `statusenabled`) VALUES
-(1, 'suhairie', 'suhairie', '02-400202402400255', 'M. Suhairie, S.Kom', 'Analyst Programmer', 't'),
-(2, 'yosmahyudi', 'yosmahyudi', '', 'Yosmahyudi', 'Operator Site', 't');
+INSERT INTO `tb_user` (`id_user`, `username`, `password`, `nip`, `nama_lengkap`, `jabatan`, `perusahaan`, `statusenabled`) VALUES
+(1, 'suhairie', 'suhairie', '', 'M. Suhairie, S.Kom', 'Analyst Programmer', 'PT. Jasamedika Saranatama', 't'),
+(2, 'yosmahyudi', 'yosmahyudi', '', 'Yosmahyudi', 'Operator Site', '', 't');
 
 --
 -- Indexes for dumped tables
