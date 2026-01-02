@@ -226,7 +226,7 @@
                 <div style="text-align: center">
                     <div>Pulau Punjung, <?= date('d M Y') ?></div>
                     <div style="margin: 5px 0px 5px 0px;">Pembuat Laporan</div>
-                      <img src="../generate_qr.php" alt="QR Code dengan Logo" style="width: 80px;">
+                      <img src="https://api.qrserver.com/v1/create-qr-code/?data=<?= $_SESSION['nip'] ?>&size=70x70" alt="QR Code">
                     <div style="margin-top: 5px; text-transform: uppercase;">( <?= $_SESSION['nama_lengkap'] ?> )</div>
                 </div>
             </div>
